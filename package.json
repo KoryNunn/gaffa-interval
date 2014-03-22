@@ -1,0 +1,22 @@
+{
+  "name": "gaffa-interval",
+  "author": "Kory Nunn <knunn187@gmail.com>",
+  "version": "1.0.0",
+  "main": "interval.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KoryNunn/gaffa-interval.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KoryNunn/gaffa-interval/issues"
+  },
+  "keywords": [
+    "gaffa",
+    "interval",
+    "behaviour"
+  ],
+  "peerDependencies": {
+    "gaffa": "^1.0.0"
+  },
+  "license": "MIT"
+}
