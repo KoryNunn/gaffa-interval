@@ -1,8 +1,8 @@
 {
   "name": "gaffa-interval",
   "author": "Kory Nunn <knunn187@gmail.com>",
-  "description" : "Interval behaviour for gaffa",
-  "version": "1.0.0",
+  "description": "Interval behaviour for gaffa",
+  "version": "1.1.0",
   "main": "interval.js",
   "repository": {
     "type": "git",
