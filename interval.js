@@ -17,9 +17,6 @@ function startInterval(behaviour){
 function IntervalBehaviour(){}
 IntervalBehaviour = Gaffa.createSpec(IntervalBehaviour, Gaffa.Behaviour);
 IntervalBehaviour.prototype._type = 'interval';
-IntervalBehaviour.prototype.bind = function(){
-   startInterval(this);
-};
 IntervalBehaviour.prototype.remove = function(){
     this.killInterval();
 
