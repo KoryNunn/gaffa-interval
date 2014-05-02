@@ -5,7 +5,7 @@ function IntervalBehaviour(){}
 IntervalBehaviour = Gaffa.createSpec(IntervalBehaviour, Gaffa.Behaviour);
 IntervalBehaviour.prototype.type = behaviourType;
 IntervalBehaviour.prototype.bind = function(){
-    Behaviour.prototype.bind.apply(this, arguments);
+    Gaffa.Behaviour.prototype.bind.apply(this, arguments);
     var behaviour = this,
         loop = true,
         currentTimeout,
@@ -29,8 +29,11 @@ IntervalBehaviour.prototype.bind = function(){
     intervalLoop();
 };
 IntervalBehaviour.prototype.remove = function(){
-    this.killInterval && this.killInterval();
-    Behaviour.prototype.remove.call(this);
-}
+    if(this.killInterval){
+        this.killInterval();
+    }
+
+    Gaffa.Behaviour.prototype.remove.call(this);
+};
 
 module.exports = IntervalBehaviour;
