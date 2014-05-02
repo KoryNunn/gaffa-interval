@@ -1,6 +1,6 @@
 #gaffa-interval
 
-interval behaviour for gaffa
+Interval behaviour for gaffa
 
 ## Install:
 
@@ -8,11 +8,30 @@ interval behaviour for gaffa
 
 ## Add to gaffa:
 
-    gaffa.behaviours.constructors.interval = require('gaffa-interval');
+    var Interval = require('gaffa-interval');
+
+    gaffa.registerConstructor(Interval);
 
 # Usage
 
-    var interval = new behaviours.Interval();
+    var interval = new Interval();
 
     interval.time = 10000;
     interval.actions.tick = [myCoolAction];
+
+# API
+
+## Actions
+
+### tick
+
+Is triggered each tick of the interval
+
+## Settings
+
+### time
+
+The time between ticks. This will default to 5000 if not set.
+
+
+
