@@ -27,7 +27,7 @@ Interval behaviour for gaffa
 
 Is triggered each tick of the interval
 
-## Settings
+## Properties (Instance of Gaffa.Property)
 
 ### time
 
